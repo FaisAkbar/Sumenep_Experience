@@ -1,0 +1,311 @@
+<!-- http://localhost/dasarWeb/Project%20UTS/UTS.HTML -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SumenepExperience</title>
+    <script src="UTS.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../Project UTS/IMG/Lambang_Kabupaten_Sumenep.png">
+    <link rel="stylesheet" href="StyleUTS.CSS">
+</head>
+
+<body>
+    <!-- Button To TOP -->
+    <img src="../Project UTS/IMG/Lambang_Kabupaten_Sumenep.png" alt="Go To TOP" id="myBtn"
+        style="width:90px; background-color: transparent;" onclick="topFunction()">
+
+    <header>
+        <!-- Navigasi -->
+        <nav>
+            <!-- Bagian Logo -->
+            <img src="../Project UTS/IMG//Lambang_Kabupaten_Sumenep.png" alt="Logo Sumenep"
+                style="width:50px; height:50px; margin-right: 10px;">
+            <div class="logo">
+                <span style="color:green;">Sumenep</span>Experience
+            </div>
+            <!-- Navigasi Item -->
+            <div class="nav-items">
+                <li><a href="./UTS.HTML">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Trending">Trending</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </div>
+            <!-- Search Box -->
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fas fa-search">
+                    <!-- <img src="../Project UTS/svg/bx-search-alt-2.svg" alt="search"> -->
+                </button>
+            </form>
+        </nav>
+    </header>
+    <!-- Video -->
+    <div class="content" onclick="togglePause()">
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="../Project UTS/IMG/Drone Footage Kota Sumenep Madura Jawa Timur 2021.mp4" type="video/mp4">
+        </video> -->
+        <iframe id="myVideo" src="https://drive.google.com/file/d/1K-GnoX9lJ8APAUfr-ych4YfB23aGnMzX/preview" width="640" height="480" allow="autoplay"></iframe>
+        <div class="text" id="about">
+            <h1>Sumenep Kota Keris</h1>
+            <p>
+                Sumenep atau dalam bahasa Madura yaitu Songennep, adalah salah satu kabupaten di Pulau Madura, Jawa
+                Timur.
+                Kabupaten ini terletak di ujung timur Pulau Madura, kondisi geografi wilayahnya terdiri dari daratan dan
+                Kepulauan sebanyak 126 Pulau.
+                Sumenep saat ini merupakan salah satu destinasi tujuan wisata di Jawa Timur, Khususnya Madura.
+                Akses menuju Sumenep begitu mudah, bisa dilalui baik menggunakan kendaraan pribadi maupun umum.
+                Terlebih setelah diresmikannya Jembatan Suramadu yang menghubungkan Pulau Jawa dan Pulau Madura.
+                Objek wisata alamnya yang begitu indah, terutama Pantai Lombang dengan hutan cemara udangnya dan Pantai
+                Slopeng dengan bukit pasir putihnya nampak begitu mempesona.
+                Selain itu para wisatawan juga dapat melakukakn wisata air dibeberapa wilayah kepulauan Sumenep,
+                seperti : Pulau Mamburit, Sepudi, kangean, Ra'as dimana pemandangan lautnya yang beriaskan batu koral
+                cantik dan ribuan ikan nemon begitu terasa menakjubkan.
+            </p>
+        </div>
+    </div>
+    <!-- Content Kiri -->
+    <table class="tabel">
+        <tr>
+            <td class="contentKiri">
+                <div class="content">
+                    <div class="text" id="Trending">
+                        <h1>Trending</h1>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/lombang.jpg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://www.kompasiana.com/natilatus22200/62566cc83794d11a587394d3/panorama-keindahan-wisata-pantai-lombang-di-sumenep-madura"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Pantai Lombang
+                                </a>
+                            </p>
+                            <p>Pasir putihnya terhampar luas sepanjang 12 km di sepanjang pantai. Pantai ini di
+                                kelilingi oleh pohon cemara udang dengan tinggi rata-rata 4m. Pohon tersebut membuat
+                                udara disekitar pantai menjadi sejuk
+                                dan segar</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/943798175.jpg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://p2k.utn.ac.id/en6/1-3069-2966/Keraton-Sumenep_41771_p2k-utn.html"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    keraton Sumenep
+                                </a>
+                            </p>
+                            <p>Keraton Sumenep adalah tempat kediaman resmi para Adipati/Raja-Raja selain sebagai tempat
+                                untuk menjalankan roda pemerintahan.</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/Tempat-Wisata-Sumenep.jpg" alt="Gambar"
+                                style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="http://sumenepkab.go.id/berita/baca/taman-adipura-kota-sumenep-akan-dipercantik"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Taman Bunga Sumenep
+                                </a>
+                            </p>
+                            <p>Taman Adipura yang lazim disebut Open Space ataupun Taman Bunga yang berada di depan
+                                Masjid Agung Kota Sumenep itu merupakan tempat rekreasi alternatif di dalam kota bagi
+                                keluarga masyarakat dan sebagai salah satu maskot kebanggaan Kabupaten Sumenep.</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/tektona.jpeg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://kumparan.com/mediamadura/taman-tectona-kini-jadi-primadona-baru-destinasi-wisata-di-sumenep/1"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Taman Tectona
+                                </a>
+                            </p>
+                            <p>Salah satu destinasi wisata buatan, Taman Tectona di Kabupaten Sumenep, Madura, Jawa
+                                Timur kini mulai menjadi primadona baru para wisatawan, khususnya saat musim liburan.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/Pantai-Slopeng.jpg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://www.transmadura.com/keindahan-wisata-tua-pantai-slopeng-nuansa-pantai-yang-khas/"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Pantai Slopeng
+                                </a>
+                            </p>
+                            <p>Pantai Slopeng memiliki hamparan pasir yang membentang sepanjang 6 km dengan luas
+                                lahan 3Ha. Pasir-pasir putih menjadi daya tarik bagi wisatawan untuk bersantai ditepian
+                                pantai. Dengan lambaian pohon-pohon kelapa, nuansa pantai yang khas sangat terasa. </p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/masjid.jfif" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://duniamasjid.islamic-center.or.id/727/masjid-agung-keraton-sumenep/"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Masjid Agung Sumenep
+                                </a>
+                            </p>
+                            <p>Masjid yang dulu bernama Masjid Jami' dan merupakan masjid Keraton Sumenep ini
+                                menggabungkan berbagai unsur budaya dalam rancang bangunnya, diantaranya Persia, Arab,
+                                India, Cina, dan Jawa. Pola ekletis ini seperti merepresentasikan keberagaman etnis yang
+                                tinggal di pulau penghasil garam tersebut.</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/mangrove.jpg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://www.kompasiana.com/grosirkeset.com/62bd3ae5725d2409c62420f3/wisata-mangrove-di-madura"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Hutan Mangrove
+                                </a>
+                            </p>
+                            <p>Hutan mangrove salah satu kawasan yang punya banyak manfaat. Bukan hanya dari sisi
+                                lingkungan, tapi juga dari sisi ekonomi, hutan mangrove bisa menjadi sumber penghasilan.
+                                Beberapa hutan mangrove saat ini dikelola sebagai destinasi wisata, termasuk di Madura.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/keris.jpg" alt="Gambar" style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://genpi.id/pantai-keris-di-sumenep/"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Pantai Keris
+                                </a>
+                            </p>
+                            <p>Pantai Keris adalah sebuah pantai yang bentuknya menyerupai keris. Atau lebih tepatnya
+                                sebuah pasir timbul yang memanjang ke arah laut. Panjang bentangan pasir ini sekitar 600
+                                meter.</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/Water-Park-Sumenep-WPS.png" alt="Gambar"
+                                style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://www.blogafhuk.com/harga-tiket-masuk-waterpark-sumekar/"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Water Park Sumenep
+                                </a>
+                            </p>
+                            <p>Water Park Sumenep merupakan salah satu wisata buatan berupa kolam renang.
+                                Segala sesuatu permainan di air bisa di nikmati di tempat ini, tentu hal ini bisa
+                                membuat Anak-anak senang saat bermain air di area Waterpark Sumekar.</p>
+                        </div>
+                        <div class="container">
+                            <img src="../Project UTS/IMG/IMG20190705142057_600x400.jpg" alt="Gambar"
+                                style="width:165px; border:double">
+                            <p style="padding-bottom: 5px;">
+                                <a href="https://jatim.nu.or.id/jujugan/isyarat-wafatnya-gus-dur-dari-makam-asta-tinggi-sumenep-rdVtF"
+                                    style="text-decoration: none; color: white; font-weight: bold;">
+                                    Asta Tinggi Sumenep
+                                </a>
+                            </p>
+                            <p>Asta berarti makam atau kuburan, dan tinggi di sini menunjukkan lokasi makam yang berada
+                                di daerah perbukitan. Jadi, Asta Tinggi merupakan kompleks pemakaman bagi Raja Sumenep
+                                beserta keluarganya di dataran tinggi.</p>
+                        </div>
+                        <!-- Button 1-5 -->
+                        <div id="myDIV" style="text-align: center; padding: 20px;">
+                            <button class="btn active">1</button>
+                            <button class="btn">2</button>
+                            <button class="btn">3</button>
+                            <button class="btn">4</button>
+                            <button class="btn">5</button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <!-- Content Kanan -->
+            <td class="contentKanan">
+                <div class="content">
+                    <div class="text">
+                        <h1>Youtube Video</h1>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/0lAVof1Vh2o" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/B_a7oNOjo8g" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/sQB01vTZ_BE" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/j9vTfwbDo9s" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/A9RmiH0Zzfk" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/1LVfYsi59NY" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/p1URuhunG0Q" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="97%" height="200" style="margin: 5px;"
+                            src="https://www.youtube.com/embed/wtQb_C6K3c8" title="INI JUDUL" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Slide Show -->
+    <div class="content">
+        <div class="Slides fade">
+            <img src="../Project UTS/IMG/Bukit tinggi.jpg" style="width:100%">
+            <div class="caption">Bukit Tinggi</div>
+        </div>
+
+        <div class="Slides fade">
+            <img src="../Project UTS/IMG/IMG-20190701-WA0035.jpg" style="width:100%">
+            <div class="caption">Goa Soekarno</div>
+        </div>
+
+        <div class="Slides fade">
+            <img src="../Project UTS/IMG/279222108.jpg" style="width:100%">
+            <div class="caption">Pantai Ekasoghi</div>
+        </div>
+
+        <div class="Slides fade">
+            <img src="../Project UTS/IMG/bukit-panjalin-sumenep-madura.jpg" style="width:100%">
+            <div class="caption">Tambang Batu Putih</div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="contact">
+        <table class="tabel">
+            <tr>
+                <td class="tabelChild">
+                    <div class="tabelChild">
+                        <h1>Contact</h1>
+                        <div class="detail">
+                            <b>Email id :</b> akbarfais06@gmail.com </br>
+                            <b>Mobile no :</b> 082335412686 <br>
+                        </div>
+                    </div>
+                </td>
+                <td class="tabelChild">
+                    <div class="tabelChild">
+                        <h1>Follow Us</h1>
+                        <div class="detail">
+                            <a href="https://www.instagram.com/fais.akbar13/" class="fa fa-instagram"></a>
+                            <a href="https://www.youtube.com/channel/UCcg0dkCmAbEuiPF43uJIvVQ/featured"
+                                class="fa fa-youtube"></a>
+                            <a href="https://twitter.com/AkbarFais13" class="fa fa-twitter"></a>
+                            <a href="https://web.facebook.com/profile.php?id=100011173840317"
+                                class="fa fa-facebook"></a>
+                            <a href="https://github.com/FaisAkbar" class="fa fa-github"></a>
+                        </div>
+                </td>
+            </tr>
+        </table>
+        © Fawaa'el Akbar Firdaus 2022
+    </footer>
+</body>
+
+</html>
